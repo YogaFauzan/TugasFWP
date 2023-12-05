@@ -4,7 +4,7 @@
     <div class="col-md-6 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">TOKO BERKAH DJAYA</h4>
+                <h4 class="card-title">TOKO AGOY SELALU</h4>
                 <p class="card-description">
                     Input Barang
                 </p>
