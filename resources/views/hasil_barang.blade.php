@@ -83,7 +83,9 @@
                                             <div class="btn-group" role="group" aria-label="Basic example">
                                                 <a href="{{ route('edit', $a->id) }}" type="button"
                                                     class="btn btn-success">Edit</a>
-                                                <button class="btn btn-danger m-0">Hapus</button>
+                                                <a href="{{ route('delete', $a->id) }}" type="button"
+                                                    class="btn btn-success">Hapus</a>
+
                                     </tr>
                                 </tbody>
                             @endforeach

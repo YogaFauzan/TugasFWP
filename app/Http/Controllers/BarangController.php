@@ -93,7 +93,8 @@ class BarangController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $barangs = Barang::orderBy('created_at', 'desc')->get();
+        return view('hasil_barang', compact('barangs'));
     }
 
     /**
@@ -124,6 +125,11 @@ class BarangController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $barangs = Barang::findOrFail($id);
+
+        $barangs->delete();
+
+        $barangs = Barang::all();
+        return view('hasil_barang', compact('barangs'));
     }
 }

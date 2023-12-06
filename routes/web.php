@@ -20,3 +20,7 @@ Route::post('/proses_barang', [BarangController::class, 'store']);
 
 Route::get('/edit_barang/{id}', [BarangController::class, 'edit'])->name('edit');
 Route::post('/proses_barang', [BarangController::class, 'store']);
+
+Route::get('/delete_barang/{id}', [BarangController::class, 'destroy'])->name('delete');
+
+Route::get('/show', [BarangController::class, 'show'])->name('show');
